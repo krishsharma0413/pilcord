@@ -17,6 +17,18 @@ from os import PathLike
 from typing import Optional, Union
 
 class Meme:
+    """
+    Represents the Meme class for pilcord
+
+    Parameters
+    ----------
+    avatar: :class:`str`
+        URL to the user avatar
+
+    Attributes
+    ----------
+    - `avatar`
+    """
 
     __slots__ = ('avatar',)
 
