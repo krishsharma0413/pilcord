@@ -25,6 +25,12 @@
 
 <br>
 
+## meme generation preview
+
+`fight_under_this_flag`
+
+![fight_under_this_flag](https://cdn.discordapp.com/attachments/1018936393659076668/1023951088677818419/flag.png)
+
 ## installation
 
 `for pypi version`
@@ -82,8 +88,9 @@ async def user_rank_card(ctx, user:disnake.Member):
 
 <br>
 
-## Documentation
+# Documentation
 
+# rank card docs 
 
 <details>
 
@@ -209,3 +216,50 @@ RankCard.card3()
 <br>
 
 </details>
+
+
+
+# rank card docs 
+
+<details>
+
+
+<summary> <span style="color:yellow">Meme</span> class</summary>
+
+<br>
+
+`__init__` method
+
+```py
+Meme(
+    avatar: str
+)
+```
+
+- `avatar` - image url.
+
+</details>
+
+
+<details>
+
+<summary> <span style="color:yellow">fight_under_this_flag</span> method</summary>
+
+
+```py
+Meme.fight_under_this_flag()
+```
+
+`returns` - `bytes` which can directly be used within `discord.File` class.
+
+
+
+![fight_under_this_flag](https://cdn.discordapp.com/attachments/1018936393659076668/1023951088677818419/flag.png)
+
+<br>
+
+</details>
+
+
+
+
