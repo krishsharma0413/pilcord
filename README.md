@@ -50,44 +50,6 @@ The method will return `bytes` which can directly be used in discord.py/disnake/
 
 <br>
 
-
-## Rank Card Example
-
-`It returns bytes which can directly be used in discord.py and its fork's File class.`
-
-```py
-
-from disnake.ext import commands
-from DiscordLevelingCard import RankCard, CardSettings
-import disnake
-
-client = commands.Bot()
-# define background, bar_color, text_color at one place
-card_settings = CardSettings(
-    background="url or path to background image",
-    text_color="white",
-    bar_color="#000000"
-)
-
-@client.slash_command(name="rank")
-async def user_rank_card(ctx, user:disnake.Member):
-    await ctx.response.defer()
-    a = RankCard(
-        settings=card_settings,
-        avatar=user.display_avatar.url,
-        level=1,
-        current_exp=1,
-        max_exp=1,
-        username="cool username",
-        rank=1
-    )
-    image = await a.card1()
-    await ctx.edit_original_message(file=disnake.File(image, filename="rank.png")) # providing filename is very important
-
-```
-
-<br>
-
 # Documentation
 
 # rank card docs 
@@ -217,6 +179,48 @@ RankCard.card3()
 
 </details>
 
+<details>
+
+<summary><span style="color:yellow">example</span></summary>
+
+`It returns bytes which can directly be used in discord.py and its fork's File class.`
+
+```py
+
+from disnake.ext import commands
+from DiscordLevelingCard import RankCard, CardSettings
+import disnake
+
+client = commands.Bot()
+# define background, bar_color, text_color at one place
+card_settings = CardSettings(
+    background="url or path to background image",
+    text_color="white",
+    bar_color="#000000"
+)
+
+@client.slash_command(name="rank")
+async def user_rank_card(ctx, user:disnake.Member):
+    await ctx.response.defer()
+    a = RankCard(
+        settings=card_settings,
+        avatar=user.display_avatar.url,
+        level=1,
+        current_exp=1,
+        max_exp=1,
+        username="cool username",
+        rank=1
+    )
+    image = await a.card1()
+    await ctx.edit_original_message(file=disnake.File(image, filename="rank.png")) # providing filename is very important
+
+```
+
+<br>
+
+
+</details>
+
 
 
 # rank card docs 
@@ -263,3 +267,33 @@ Meme.fight_under_this_flag()
 
 
 
+
+<details>
+
+<summary><span style="color:yellow">example</span></summary>
+
+`It returns bytes which can directly be used in discord.py and its fork's File class.`
+
+```py
+
+from disnake.ext import commands
+from DiscordLevelingCard import Meme
+import disnake
+
+client = commands.Bot()
+
+@client.slash_command(name="fight_under_this_flag")
+async def fight_under_this_flag_meme(ctx, user:disnake.Member):
+    await ctx.response.defer()
+    a = Meme(
+        avatar=user.display_avatar.url
+    )
+    image = await a.fight_under_this_flag()
+    await ctx.edit_original_message(file=disnake.File(image, filename="fight.png")) # providing filename is very important
+
+```
+
+<br>
+
+
+</details>
