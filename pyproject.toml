@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "pilcord"
+version = "0.1.0"
+description = "A library rich with many image generation funcitons powered by PIL for your discord bot such as leveling, welcome card and meme generation!"
+authors = ["Reset <resetwastakenwastaken@gmail.com>"]
+license = "MIT"
+keywords = [
+    "discord", "leveling", "card",
+    "image", "discord.py", "disnake",
+    "nextcord", "rank", "ranking",
+    "level", "discord-bot", "bot",
+    "discord-leveling", "level-card",
+    "discord-leveling-card", "discord-rank-card",
+    "meme-generation", "pillow", "pil", "discord-image-generation",
+    "discord-meme-generation", "discord-image", "discord-meme",
+    "pycord", "discord-rank", "discord-welcome-card", "welcome-card",
+    "welcome", "discord-welcome-bot", "discord-welcome-card"
+]
+
+packages = [
+    { include = "pilcord"}
+]
+include = ["pilcord/assets/*"]
+
+
+[tool.poetry.dependencies]
+python = "^3.9"
+aiohttp = "^3.8.1"
+Pillow = "^9.2.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
