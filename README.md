@@ -31,6 +31,13 @@
 
 ![fight_under_this_flag](https://cdn.discordapp.com/attachments/1018936393659076668/1023951088677818419/flag.png)
 
+
+`uwu_discord`
+
+![image preview](https://cdn.discordapp.com/attachments/1018936393659076668/1024368352984059984/unknown.png)
+
+
+
 ## installation
 
 `for pypi version`
@@ -265,6 +272,25 @@ Meme.fight_under_this_flag()
 </details>
 
 
+
+
+<details>
+
+<summary> <span style="color:yellow">uwu_discord</span> method</summary>
+
+
+```py
+Meme.uwu_discord()
+```
+
+`returns` - `bytes` which can directly be used within `discord.File` class.
+
+
+
+![uwu_discord](https://cdn.discordapp.com/attachments/1018936393659076668/1024368352984059984/unknown.png)
+<br>
+
+</details>
 
 
 
