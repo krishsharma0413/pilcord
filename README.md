@@ -2,6 +2,8 @@
 
 [github](https://github.com/ResetXD/pilcord)
 
+status: `new image gen everyday!`
+
 
 A library rich with many image generation funcitons powered by PIL for your discord bot such as leveling, welcome card and meme generation!
 
@@ -28,6 +30,13 @@ A library rich with many image generation funcitons powered by PIL for your disc
 `fight_under_this_flag`
 
 ![fight_under_this_flag](https://cdn.discordapp.com/attachments/1018936393659076668/1023951088677818419/flag.png)
+
+
+`uwu_discord`
+
+![image preview](https://cdn.discordapp.com/attachments/1018936393659076668/1024368352984059984/unknown.png)
+
+
 
 ## installation
 
@@ -263,6 +272,25 @@ Meme.fight_under_this_flag()
 </details>
 
 
+
+
+<details>
+
+<summary> <span style="color:yellow">uwu_discord</span> method</summary>
+
+
+```py
+Meme.uwu_discord()
+```
+
+`returns` - `bytes` which can directly be used within `discord.File` class.
+
+
+
+![uwu_discord](https://cdn.discordapp.com/attachments/1018936393659076668/1024368352984059984/unknown.png)
+<br>
+
+</details>
 
 
 

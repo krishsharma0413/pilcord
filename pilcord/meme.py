@@ -86,3 +86,28 @@ class Meme:
         background.save(image, 'PNG')
         image.seek(0)
         return image
+
+    async def uwu_discord(self):
+        """
+        Creates the provided meme and returns `bytes`
+
+        preview
+        -------
+        ![image preview](https://cdn.discordapp.com/attachments/1018936393659076668/1024368352984059984/unknown.png)
+        """
+        path = str(Path(__file__).parent)
+
+        if isinstance(self.avatar, str):
+            if self.avatar.startswith("http"):
+                self.avatar = await Meme._image(self.avatar)
+        else:
+            raise TypeError(f"avatar must be a url, not {type(self.avatar)}") 
+
+        avatar = self.avatar.resize((500,500))
+        uwu = Image.open(path + "/assets/uwu_mask.png")
+        back = Image.new("RGBA",(500,500))
+        back.paste(avatar,(0,0), uwu.convert("L"))
+        image = BytesIO()
+        back.save(image, 'PNG')
+        image.seek(0)
+        return image
