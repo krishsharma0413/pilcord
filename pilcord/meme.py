@@ -60,9 +60,10 @@ class Meme:
         if isinstance(self.avatar, str):
             if self.avatar.startswith("http"):
                 self.avatar = await Meme._image(self.avatar)
+        elif isinstance(self.avatar, Image.Image):
+            pass
         else:
             raise TypeError(f"avatar must be a url, not {type(self.avatar)}") 
-
         avatar = self.avatar.resize((197,197))
         background = Image.open(path + "/assets/fight.jpeg")
         overlay2 = Image.open(path + "/assets/overlay2.png").resize((197,197))

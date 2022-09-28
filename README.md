@@ -1,11 +1,9 @@
 # pilcord
 
-`note: since the library is still under development, the method and its parameter may change in the future, to get latest information please check the github repository`
-
 [github](https://github.com/ResetXD/pilcord)
 
 
-[ WIP ] A library rich with many image generation funcitons powered by PIL for your discord bot such as leveling, welcome card and meme generation!
+A library rich with many image generation funcitons powered by PIL for your discord bot such as leveling, welcome card and meme generation!
 
 
 ## ranking card preview

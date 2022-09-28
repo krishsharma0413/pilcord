@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "pilcord"
-version = "0.1.2"
+version = "1.0.0"
 readme = "README.md"
 description = "A library rich with many image generation funcitons powered by PIL for your discord bot such as leveling, welcome card and meme generation!"
 authors = ["Reset <resetwastakenwastaken@gmail.com>"]

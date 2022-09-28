@@ -166,12 +166,16 @@ class RankCard:
                 self.background = await RankCard._image(self.background)
             else:
                 self.background = Image.open(open(self.background, "rb"))
+        elif isinstance(self.background, Image.Image):
+            pass
         else:
             raise InvalidImageType(f"background must be a path or url or a file buffer, not {type(self.background)}") 
 
         if isinstance(self.avatar, str):
             if self.avatar.startswith("http"):
                 self.avatar = await RankCard._image(self.avatar)
+        elif isinstance(self.avatar, Image.Image):
+            pass
         else:
             raise TypeError(f"avatar must be a url, not {type(self.avatar)}") 
 
@@ -239,6 +243,8 @@ class RankCard:
         if isinstance(self.avatar, str):
             if self.avatar.startswith("http"):
                 self.avatar = await RankCard._image(self.avatar)
+        elif isinstance(self.avatar, Image.Image):
+            pass
         else:
             raise TypeError(f"avatar must be a url or a file buffer, not {type(self.background)}") 
 
@@ -306,12 +312,16 @@ class RankCard:
                 self.background = await RankCard._image(self.background)
             else:
                 self.background = Image.open(open(self.background, "rb"))
+        elif isinstance(self.avatar, Image.Image):
+            pass
         else:
             raise InvalidImageType(f"background must be a path or url or a file buffer, not {type(self.background)}") 
 
         if isinstance(self.avatar, str):
             if self.avatar.startswith("http"):
                 self.avatar = await RankCard._image(self.avatar)
+        elif isinstance(self.avatar, Image.Image):
+            pass
         else:
             raise TypeError(f"avatar must be a url or a file buffer, not {type(self.background)}") 
 
