@@ -113,3 +113,31 @@ class Meme:
         back.save(image, 'PNG')
         image.seek(0)
         return image
+
+    async def rip(self):
+        """
+        Creates the provided meme and returns `bytes`
+
+        preview
+        -------
+        ![image preview](https://cdn.discordapp.com/attachments/946821391183925331/1024637846881054770/unknown.png)
+        """
+        path = str(Path(__file__).parent)
+
+        if isinstance(self.avatar, str):
+            if self.avatar.startswith("http"):
+                self.avatar = await Meme._image(self.avatar)
+        elif isinstance(self.avatar, Image.Image):
+            pass
+        else:
+            raise TypeError(f"avatar must be a url, not {type(self.avatar)}") 
+
+        avatar = self.avatar.resize((521//2,620//2))
+        
+        mask_im = Image.open(path + "/assets/rip.png").convert('L').resize((521//2,620//2))
+        background = Image.open(path + "/assets/rip.png").resize((521//2,620//2))
+        background.paste(avatar, (0, 0), mask_im)
+        image = BytesIO()
+        background.save(image, 'PNG')
+        image.seek(0)
+        return image

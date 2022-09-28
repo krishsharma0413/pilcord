@@ -37,6 +37,10 @@ A library rich with many image generation funcitons powered by PIL for your disc
 ![image preview](https://cdn.discordapp.com/attachments/1018936393659076668/1024368352984059984/unknown.png)
 
 
+`rip`
+
+![image preview](https://cdn.discordapp.com/attachments/946821391183925331/1024637846881054770/unknown.png)
+
 
 ## installation
 
@@ -291,6 +295,28 @@ Meme.uwu_discord()
 <br>
 
 </details>
+
+
+
+<details>
+
+<summary> <span style="color:yellow">rip</span> method</summary>
+
+
+```py
+Meme.rip()
+```
+
+`returns` - `bytes` which can directly be used within `discord.File` class.
+
+
+
+![uwu_discord](https://cdn.discordapp.com/attachments/946821391183925331/1024637846881054770/unknown.png)
+<br>
+
+</details>
+
+
 
 
 
