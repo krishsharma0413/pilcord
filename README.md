@@ -1,45 +1,33 @@
 # pilcord
 
-[github](https://github.com/ResetXD/pilcord)
+[![PyPI version](https://badge.fury.io/py/pilcord.svg)](https://badge.fury.io/py/pilcord)
+![GitHub issues](https://img.shields.io/github/issues/krishsharma0413/pilcord)
 
-status: `new image gen everyday!`
-
+⚠️ **NO UPDATES TILL APRIL 2024**
 
 A library rich with many image generation funcitons powered by PIL for your discord bot such as leveling, welcome card and meme generation!
 
 
 ## ranking card preview
 
-`card1`
+**NOTE** **:** Ranking Card is **DEPRICATED**. Use [krishsharma0413/DiscordLevelingCard](https://github.com/krishsharma0413/DiscordLevelingCard) for ranking card generation.
 
-![card1](https://cdn.discordapp.com/attachments/907213435358547968/994620579816681572/unknown.png)
-
-
-`card2`
-![card](https://cdn.discordapp.com/attachments/907213435358547968/1020968412144480316/final.png)
-
-
-`card3` *same as card2 but with background*
-![card](https://cdn.discordapp.com/attachments/1018936393659076668/1022149875544113172/rank.png)
-
-
-<br>
 
 ## meme generation preview
 
 `fight_under_this_flag`
 
-![fight_under_this_flag](https://cdn.discordapp.com/attachments/1018936393659076668/1023951088677818419/flag.png)
+![fight_under_this_flag](./assets/under_the_flag.png)
 
 
 `uwu_discord`
 
-![image preview](https://cdn.discordapp.com/attachments/1018936393659076668/1024368352984059984/unknown.png)
+![image preview](./assets/uwu_discord.png)
 
 
 `rip`
 
-![image preview](https://cdn.discordapp.com/attachments/946821391183925331/1024637846881054770/unknown.png)
+![image preview](./assets/rip.png)
 
 
 ## installation
