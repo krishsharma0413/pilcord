@@ -3,8 +3,6 @@
 [![PyPI version](https://badge.fury.io/py/pilcord.svg)](https://badge.fury.io/py/pilcord)
 ![GitHub issues](https://img.shields.io/github/issues/krishsharma0413/pilcord)
 
-⚠️ **NO UPDATES TILL APRIL 2024**
-
 A library rich with many image generation funcitons powered by PIL for your discord bot such as leveling, welcome card and meme generation!
 
 
